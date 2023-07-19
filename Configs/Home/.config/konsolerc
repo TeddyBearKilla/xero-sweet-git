@@ -1,0 +1,22 @@
+[Desktop Entry]
+DefaultProfile=XeroLinux.profile
+
+[General]
+ConfigVersion=1
+
+[KonsoleWindow]
+AllowMenuAccelerators=true
+RememberWindowSize=false
+ShowMenuBarByDefault=false
+
+[MainWindow]
+State=AAAA/wAAAAD9AAAAAAAAA3UAAAGxAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIAAAAAAP////8AAAAAAAAAAA==
+StatusBar=Disabled
+ToolBarsMovable=Disabled
+
+[TabBar]
+CloseTabOnMiddleMouseButton=true
+NewTabButton=true
+
+[UiSettings]
+ColorScheme=
