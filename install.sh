@@ -69,7 +69,7 @@ sudo sed -i "s/GRUB_GFXMODE=auto/GRUB_GFXMODE=1920x1080/g" /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 sleep 2
 echo
-cd .. && rm -rf xero-sweet-git/
+cd ~ && rm -rf xero-sweet-git/
 echo "Applying New XeroASCII...."
 echo "#################################"
 cd ~/.config/neofetch/ && wget -O XeroAscii https://raw.githubusercontent.com/xerolinux/xero-fixes/main/conf/XeroAsciiSweet
