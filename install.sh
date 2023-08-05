@@ -15,7 +15,7 @@ fi
 # Rename XeroAscii toXero Ascii.old
 if [ -f "$HOME/.config/neofetch/XeroAscii" ]; then
     echo "Renaming XeroAscii to XeroAscii.old..."
-    mv $HOME/.config/neofetch/XeroAscii $HOME/XeroAscii.old
+    mv $HOME/.config/neofetch/XeroAscii $HOME/.config/neofetch/XeroAscii.old
 fi
 echo
 echo "Removing No longer needed Packages"
