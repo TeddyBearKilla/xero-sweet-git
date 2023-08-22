@@ -46,11 +46,6 @@ sudo flatpak override --filesystem=$HOME/.themes
 sudo flatpak override --filesystem=xdg-config/gtk-3.0:ro
 sudo flatpak override --filesystem=xdg-config/gtk-4.0:ro
 echo
-sleep 1.5
-echo "Converting Current Theme to Flatpak"
-echo "###################################"
-sleep 1.5
-stylepak install-system Sweet-Dark && stylepak install-user Sweet-Dark
 sleep 2
 echo
 echo "##########################################"
@@ -65,7 +60,7 @@ echo "Applying Grub Theme...."
 echo "#################################"
 chmod +x Grub.sh
 sudo ./Grub.sh
-sudo sed -i "s/GRUB_GFXMODE=auto/GRUB_GFXMODE=1920x1080/g" /etc/default/grub
+sudo sed -i "s/GRUB_GFXMODE=*.*/GRUB_GFXMODE=1920x1080x32/g" /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 sleep 2
 echo
