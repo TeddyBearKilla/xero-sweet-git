@@ -50,10 +50,10 @@ sleep 2
 echo
 echo "##########################################"
 echo "      Applying LibAdwaita GTK4 Patch      "
-echo " Please Select Sweet-Dark from the list.. "
 echo "##########################################"
-chmod +x libadwaita-tc.py
-./libadwaita-tc.py
+ln -sf "$HOME/.themes/Sweet-Dark/gtk-4.0/assets" "${HOME}/.config/gtk-4.0/assets"
+ln -sf "$HOME/.themes/Sweet-Dark/gtk-4.0/gtk.css" "${HOME}/.config/gtk-4.0/gtk-dark.css"
+ln -sf "$HOME/.themes/Sweet-Dark/gtk-4.0/gtk-dark.css" "${HOME}/.config/gtk-4.0/gtk.css"
 sleep 2
 echo
 echo "Applying Grub Theme...."
