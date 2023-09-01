@@ -71,5 +71,5 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 Placement=Centered
 
 [org.kde.kdecoration2]
-library=org.kde.oxygen
-theme=Oxygen
+library=org.kde.kwin.aurorae
+theme=__aurorae__svg__Sweet-Dark-transparent

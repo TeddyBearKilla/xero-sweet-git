@@ -26,7 +26,7 @@ echo
 echo "Installing Sweet Theme & Needed Packages"
 echo "########################################"
 # Check if any of the specified packages are installed and install them if not present
-packages="sweet-kvantum-theme-git sweet-cursors-theme-git beautyline oxygen xero-fonts-git ttf-hack-nerd ttf-fira-code ttf-meslo-nerd-font-powerlevel10k ttf-terminus-nerd noto-fonts-emoji otf-hasklig-nerd"
+packages="sweet-kde-git sweet-kvantum-theme-git sweet-cursors-theme-git beautyline oxygen xero-fonts-git ttf-hack-nerd ttf-fira-code ttf-meslo-nerd-font-powerlevel10k ttf-terminus-nerd noto-fonts-emoji otf-hasklig-nerd"
 
 for package in $packages; do
     pacman -Qi "$package" > /dev/null 2>&1 || sudo pacman -Syy --noconfirm --needed "$package" > /dev/null 2>&1
@@ -50,9 +50,14 @@ sleep 2
 echo
 echo "##########################################"
 echo "      Applying LibAdwaita GTK4 Patch      "
+echo "    Please Select Sweet-Dark from list    "
 echo "##########################################"
+./libadwaita-tc.py
+sleep 2
 ln -sf "$HOME/.themes/Sweet-Dark/gtk-4.0/assets" "${HOME}/.config/gtk-4.0/assets"
+sleep 1.5
 ln -sf "$HOME/.themes/Sweet-Dark/gtk-4.0/gtk.css" "${HOME}/.config/gtk-4.0/gtk-dark.css"
+sleep 1.5
 ln -sf "$HOME/.themes/Sweet-Dark/gtk-4.0/gtk-dark.css" "${HOME}/.config/gtk-4.0/gtk.css"
 sleep 2
 echo
