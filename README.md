@@ -18,7 +18,7 @@ Or
 
 Just clone this repository, run terminal inside directory and run installer Script using below command.
 
-`git clone https://github.com/TeddyBearKilla/xero-catppuccin-git && cd xero-catppuccin-git && ./install.sh`
+`git clone https://github.com/TeddyBearKilla/xero-sweet-git/ && cd xero-sweet-git && ./install.sh`
 
 ### Side-Note :
 
