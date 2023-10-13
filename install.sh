@@ -36,6 +36,7 @@ echo
 echo "Creating Backup & Applying new Rice, hold on..."
 echo "###############################################"
 cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S) && cp -Rf Configs/Home/. ~
+cp -r ~/.mozilla ~/.mozilla-backup-$(date +%Y.%m.%d-%H.%M.%S) && cp -Rf Configs/Home/. 
 sudo cp -Rf Configs/System/. / && sudo cp -Rf Configs/Home/. /root/
 sudo sed -i "s/Current=.*/Current=Shiny-SDDM/" /etc/sddm.conf.d/kde_settings.conf
 sleep 2
